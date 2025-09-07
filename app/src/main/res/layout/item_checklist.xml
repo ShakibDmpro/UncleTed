@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/iv_feature_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="?attr/colorPrimary"
+        tools:src="@drawable/ic_key_24" />
+
+    <TextView
+        android:id="@+id/tv_feature_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textAppearance="?attr/textAppearanceTitleMedium"
+        app:layout_constraintEnd_toStartOf="@+id/iv_status_icon"
+        app:layout_constraintStart_toEndOf="@id/iv_feature_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Device Admin" />
+
+    <TextView
+        android:id="@+id/tv_feature_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textAppearance="?attr/textAppearanceBodySmall"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        app:layout_constraintEnd_toEndOf="@id/tv_feature_title"
+        app:layout_constraintStart_toStartOf="@id/tv_feature_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_feature_title"
+        tools:text="Required for remote lock and wipe." />
+
+    <ImageView
+        android:id="@+id/iv_status_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_feature_title"
+        app:layout_constraintEnd_toStartOf="@id/tv_status_text"
+        app:layout_constraintTop_toTopOf="@id/tv_feature_title"
+        tools:src="@drawable/ic_check_circle_24"
+        tools:tint="@color/status_green" />
+
+    <TextView
+        android:id="@+id/tv_status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceLabelMedium"
+        app:layout_constraintBottom_toBottomOf="@id/iv_status_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_status_icon"
+        tools:text="Active"
+        tools:textColor="@color/status_green" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

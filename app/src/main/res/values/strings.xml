@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App & Navigation -->
+    <string name="app_name">Uncle Ted</string>
+    <string name="app_name_hidden">System Service</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_subtitle">A cabin in the digital woods.</string>
+
+    <!-- Menu Items -->
+    <string name="menu_dashboard">Dashboard</string>
+    <string name="menu_permissions">Core Services</string>
+    <string name="menu_pins">Authentication</string>
+    <string name="menu_remote">Remote Control</string>
+    <string name="menu_features">Features</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_about">About</string>
+
+    <!-- General UI -->
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <!-- Lock Screen & Auth -->
+    <string name="lock_screen_title">Device Secured</string>
+    <string name="lock_screen_subtitle">Enter PIN to unlock</string>
+    <string name="lock_screen_pin_hint">PIN</string>
+    <string name="lock_screen_unlock_button">Unlock</string>
+    <string name="unauthorized_action_title">Unauthorized Action</string>
+    <string name="unauthorized_action_subtitle">Enter PIN to verify your identity</string>
+    <string name="config_error_title">Configuration Error</string>
+    <string name="config_error_pins_not_set">Security PINs have not been set. Unlock is not possible.</string>
+    <string name="incorrect_pin_toast">Incorrect PIN</string>
+    <string name="biometric_auth_title">Uncle Ted Security</string>
+    <string name="biometric_auth_subtitle">Authenticate to access the application</string>
+    <string name="biometric_auth_failed_exit">Authentication failed. Exiting.</string>
+
+    <!-- Fake Shutdown Screen -->
+    <string name="fake_shutdown_text">Powering off…</string>
+
+    <!-- Permissions Screen -->
+    <string name="permissions_runtime_granted">✓ Runtime Permissions: Granted</string>
+    <string name="permissions_runtime_missing">Runtime Permissions: Missing</string>
+    <string name="permissions_admin_active">✓ Device Admin: Active</string>
+    <string name="permissions_admin_inactive">Device Admin: Inactive</string>
+    <string name="permissions_accessibility_active">✓ Accessibility: Active</string>
+    <string name="permissions_accessibility_inactive">Accessibility: Inactive</string>
+    <string name="permissions_overlay_granted">✓ Draw Over Apps: Granted</string>
+    <string name="permissions_overlay_missing">Draw Over Apps: Missing</string>
+    <string name="permissions_usage_granted">✓ Usage Access: Granted (Optional)</string>
+    <string name="permissions_usage_missing">Usage Access: Missing (Optional)</string>
+    <string name="permissions_all_granted_toast">All permissions granted!</string>
+    <string name="permissions_some_denied_toast">Some permissions were denied. The app may not function properly.</string>
+    <string name="permissions_admin_enabled_toast">Device Admin enabled successfully!</string>
+    <string name="permissions_admin_not_enabled_toast">Device Admin was not enabled. Remote wipe and lock will not work.</string>
+    <string name="permissions_overlay_granted_toast">Overlay permission granted!</string>
+    <string name="permissions_overlay_required_toast">Overlay permission is required for the Fake Shutdown feature.</string>
+    <string name="permissions_accessibility_enabled_toast">Accessibility service enabled!</string>
+    <string name="permissions_accessibility_required_toast">Please enable the Uncle Ted accessibility service for the Fake Shutdown feature.</string>
+    <string name="permissions_usage_granted_toast">Usage access granted!</string>
+    <string name="permissions_usage_optional_toast">Usage access can help with advanced monitoring features.</string>
+    <string name="permissions_all_runtime_granted_toast">All runtime permissions already granted!</string>
+    <string name="permissions_admin_already_active_toast">Device Admin is already active.</string>
+    <string name="permissions_accessibility_already_active_toast">Accessibility Service is already active.</string>
+    <string name="permissions_overlay_already_granted_toast">Overlay permission already granted.</string>
+    <string name="permissions_usage_already_granted_toast">Usage Access already granted.</string>
+    <string name="permissions_usage_skipped_toast">Usage access permission skipped.</string>
+    <string name="permissions_required_dialog_title">Permissions Required</string>
+    <string name="permissions_required_dialog_message">Uncle Ted needs these permissions to protect your device:\n\n• Camera: Take photos of intruders\n• Location: Send your location in emergencies\n• SMS: Send and receive remote commands\n• Microphone: Record ambient audio\n• Notifications: Show alerts</string>
+    <string name="permissions_required_dialog_grant">Grant Permissions</string>
+    <string name="permissions_admin_dialog_explanation">Uncle Ted requires Device Admin permission to:\n\n• Remotely lock your device when receiving SMS commands\n• Securely wipe your device data in emergency situations\n• Prevent unauthorized uninstallation of the security app\n\nThis permission is essential for the core security features.</string>
+    <string name="permissions_accessibility_dialog_title">Enable Accessibility Service</string>
+    <string name="permissions_accessibility_dialog_open_settings">Open Settings</string>
+    <string name="permissions_overlay_dialog_title">Draw Over Other Apps Permission</string>
+    <string name="permissions_overlay_dialog_message">This permission allows Uncle Ted to:\n\n• Show a fake shutdown screen when someone tries to power off your device\n• Display security lock screens over other apps\n• Show emergency alerts that can\'t be easily dismissed\n\nThis helps prevent thieves from turning off your device.</string>
+    <string name="permissions_overlay_dialog_grant">Grant Permission</string>
+    <string name="permissions_usage_dialog_title">Usage Access Permission</string>
+    <string name="permissions_usage_dialog_message">This optional permission allows Uncle Ted to:\n\n• Monitor app usage patterns for anomaly detection\n• Detect if security apps are being disabled\n• Provide more detailed security analytics\n\nThis permission is optional but enhances security monitoring.</string>
+    <string name="permissions_usage_dialog_skip">Skip</string>
+    <string name="permissions_button_runtime">Runtime Permissions</string>
+    <string name="permissions_button_admin">Device Admin</string>
+    <string name="permissions_button_accessibility">Accessibility Service</string>
+    <string name="permissions_button_overlay">Draw Over Other Apps</string>
+    <string name="permissions_button_usage">Usage Access (Optional)</string>
+    <string name="permissions_category_core">Core Services</string>
+
+    <!-- PINs Screen -->
+    <string name="pins_category_title">Authentication</string>
+    <string name="pins_normal_hint">Normal Unlock PIN</string>
+    <string name="pins_duress_hint">Duress (Panic) PIN</string>
+    <string name="pins_save_button">Save PINs</string>
+    <string name="pins_saved_toast">PIN settings saved!</string>
+    <string name="wipe_pin_hint">Wipe Lock PIN (Extreme Caution)</string>
+    <string name="pin_guide_title">PIN Function Guide</string>
+    <string name="pin_guide_normal_title">Normal Unlock PIN</string>
+    <string name="pin_guide_normal_desc">Use this for safe, everyday unlocking of the security screen.</string>
+    <string name="pin_guide_duress_title">Duress (Panic) PIN</string>
+    <string name="pin_guide_duress_desc">Use this when forced to unlock. The screen unlocks normally, but a silent HIGH alert is sent with evidence.</string>
+    <string name="pin_guide_wipe_title">Wipe Lock PIN</string>
+    <string name="pin_guide_wipe_desc">Use this as a last resort. The screen unlocks normally, but a CRITICAL alert is sent and the device immediately begins to WIPE ALL DATA.</string>
+
+    <!-- Remote Screen -->
+    <string name="remote_category_title">Remote Control</string>
+    <string name="remote_emergency_contact_hint">Emergency Contact (Phone or Email)</string>
+    <string name="remote_save_button">Save Remote Settings</string>
+    <string name="remote_saved_toast">Remote settings saved!</string>
+    <string name="set_email_credentials_button">Set Email Credentials</string>
+    <string name="set_email_credentials_title">Set Email Credentials</string>
+    <string name="email_host_hint">SMTP Host (e.g., smtp.gmail.com)</string>
+    <string name="email_port_hint">SMTP Port (e.g., 587 or 465)</string>
+    <string name="email_username_hint">Email Address (Sender)</string>
+    <string name="email_password_hint">Email Password/App Password</string>
+    <string name="enable_ssl_tls">Enable SSL/TLS</string>
+    <string name="send_test_email">Send Test Email</string>
+    <string name="email_sending_failed">Failed to send email: %s</string>
+    <string name="email_sending_success">Test email sent successfully!</string>
+    <string name="email_credentials_missing">Email credentials are incomplete. Please fill all fields.</string>
+    <string name="email_credentials_saved_toast">Email credentials saved.</string>
+    <string name="sending_test_email_toast">Sending test email…</string>
+    <string name="set_valid_email_contact_toast">Set a valid email in \'Emergency Contact\' first.</string>
+    <string name="sms_master_password_hint">SMS Command Master Password</string>
+    <string name="sms_master_password_helper">Required to authenticate all SMS commands (e.g., "UNCLETED WIPE [password]")</string>
+    <string name="sms_command_guide_title">SMS Command Guide</string>
+    <string name="sms_command_guide_instructions">Send an SMS to this device from any phone using the following format. Replace "[password]" with your SMS Command Master Password.</string>
+    <string name="sms_command_wipe">UNCLETED WIPE [password]</string>
+    <string name="sms_command_wipe_desc">Triggers a CRITICAL alert, sends evidence, and initiates a full device wipe (if enabled).</string>
+    <string name="sms_command_siren">UNCLETED SIREN [password]</string>
+    <string name="sms_command_siren_desc">Triggers a HIGH alert, sends evidence, and activates a loud siren on the device.</string>
+    <string name="sms_command_lock">UNCLETED LOCK [password]</string>
+    <string name="sms_command_lock_desc">Immediately locks the device and shows the secure PIN entry screen.</string>
+    <string name="remote_install_code_hint">Remote Install SMS Code</string>
+
+    <!-- Features Screen -->
+    <string name="features_panic_category">Panic &amp; Evidence Features</string>
+    <string name="feature_record_video">Record Video on High Alert</string>
+    <string name="feature_ambient_audio">Record Ambient Audio on High Alert</string>
+    <string name="feature_wipe_device">Wipe Device on Critical Alert (Extreme)</string>
+    <string name="features_triggers_category">Automated &amp; Environment Triggers</string>
+    <string name="feature_intruder_selfie">Intruder Selfie (3+ failed attempts)</string>
+    <string name="save_selfie_locally">Also save selfie to device\'s public Pictures folder</string>
+    <string name="feature_sim_change">SIM Change Alert</string>
+    <string name="feature_fake_shutdown">Enable Fake Shutdown</string>
+    <string name="shake_to_panic_feature">Shake to Panic</string>
+    <string name="feature_geofence">Enable Safe Zone Geofence</string>
+    <string name="feature_set_geofence_button">Set Current Location as Safe Zone</string>
+    <string name="feature_geofence_permission_required">Location permission is required to set a geofence.</string>
+    <string name="feature_geofence_set_toast">Safe zone set to current location.</string>
+    <string name="feature_geofence_not_retrieved_toast">Could not retrieve current location. Please try again.</string>
+    <string name="watchdog_mode">Watchdog Mode</string>
+    <string name="watchdog_interval_hint">Update Interval</string>
+    <string name="tripwire_mode">Data Destruction Tripwire</string>
+    <string name="tripwire_duration_hint">Offline Duration to Trigger Wipe</string>
+    <string name="features_config_category">App &amp; System Configuration</string>
+    <string name="feature_stealth_mode">Stealth Mode (Hide App Icon)</string>
+    <string name="secret_dialer_code_hint">Secret Code (Numbers Only)</string>
+    <string name="secret_dialer_code_helper">To open, dial *#*#CODE#*#* (e.g., *#*#5796#*#*)</string>
+    <string name="feature_biometric_lock">Biometric App Lock</string>
+    <string name="feature_trusted_vpn">A trusted VPN is normally active</string>
+    <string name="feature_maintenance_mode">Maintenance Mode (Disable Protection)</string>
+    <string name="feature_maintenance_pin_dialog_title">Enter PIN to Enable Maintenance</string>
+    <string name="feature_maintenance_pin_dialog_message">For your security, please enter your normal unlock PIN to enable Maintenance Mode. This will allow you to safely disable Device Admin or uninstall the app.</string>
+    <string name="feature_maintenance_pin_dialog_hint">Enter PIN</string>
+    <string name="feature_maintenance_disabled_toast">Maintenance Mode Disabled.</string>
+    <string name="feature_maintenance_enabled_toast">Maintenance Mode Enabled.</string>
+    <string name="feature_event_log_button">View Security Event Log</string>
+    <string name="root_features_title">Root-Exclusive Features</string>
+    <string name="root_features_unavailable">Root access not detected. These features are unavailable.</string>
+    <string name="root_feature_gps_spoof">GPS Spoofing on Duress</string>
+    <string name="decoy_gps_location_hint">Decoy Location (e.g., 40.7128,-74.0060)</string>
+    <string name="root_feature_silent_install">Remote Silent App Installer</string>
+    <string name="remote_apk_url_hint">Remote APK URL for Installation</string>
+    <string name="root_feature_firewall_tripwire">Firewall Tripwire</string>
+    <string name="root_feature_secure_wipe">Secure Wipe+ (Physical Overwrite)</string>
+    <string name="root_feature_system_app">Make System App (Permanent)</string>
+    <string name="root_feature_system_app_desc">Moves the app to /system/priv-app to make it extremely difficult to uninstall. This action is irreversible without root and requires a reboot.</string>
+    <string name="system_app_warning_title">Reboot Required</string>
+    <string name="system_app_warning_message">This will convert Uncle Ted into a system application, making it uninstallable through normal means. This action is permanent and requires your device to reboot. Are you absolutely sure you want to proceed?</string>
+    <string name="system_app_converting_toast">Converting to system app and rebooting…</string>
+    <string name="system_app_failed_toast">Failed to convert to system app. Check logs.</string>
+    <string name="root_ultimate_stealth_title">Ultimate Stealth &amp; Persistence</string>
+    <string name="root_feature_unkillable_service">Unkillable Background Service</string>
+    <string name="root_feature_unkillable_service_desc">Installs a root-level init.d script that constantly monitors and restarts the app\'s services if they are ever stopped, making the app truly persistent.</string>
+    <string name="unkillable_enabled_toast">Unkillable service enabled.</string>
+    <string name="unkillable_disabled_toast">Unkillable service disabled.</string>
+    <string name="operation_failed_toast">Operation failed. Check logs.</string>
+    <string name="root_feature_hide_process">Hide Process from Task Managers</string>
+    <string name="root_feature_hide_process_desc">Uses MagiskHide to remove the app from the process list, making it invisible to most process monitors and task managers.</string>
+    <string name="process_hiding_enabled_toast">Process hiding enabled.</string>
+    <string name="process_hiding_disabled_toast">Process hiding disabled.</string>
+    <string name="process_hiding_failed_toast">Operation failed. MagiskHide might not be available.</string>
+    <string name="root_feature_survive_reset">Survive Factory Reset (EXTREMELY DANGEROUS)</string>
+    <string name="root_feature_survive_reset_desc">Attempts to flash a loader script to the boot or recovery partition. This loader will re-download and reinstall this app after a factory reset. THIS CAN BRICK YOUR DEVICE.</string>
+    <string name="loader_script_url_hint">Loader Script URL</string>
+    <string name="factory_reset_warning_title">EXTREME DANGER: BRICK RISK</string>
+    <string name="factory_reset_warning_message">This feature attempts to modify your device\'s boot or recovery partition. An incorrect URL or incompatible script WILL PERMANENTLY BRICK YOUR DEVICE, making it unusable. This is for advanced users with a recovery plan. Are you absolutely certain you want to proceed?</string>
+    <string name="factory_reset_dialog_proceed">I Understand, Proceed</string>
+    <string name="factory_reset_flashing_toast">Attempting to flash loader…</string>
+    <string name="factory_reset_success_toast">Loader flashed successfully.</string>
+    <string name="factory_reset_failed_toast">FLASH FAILED. CHECK LOGS.</string>
+    <string name="root_surveillance_title">Advanced Surveillance</string>
+    <string name="root_feature_stealth_screenshot">Stealth Screenshot Capture</string>
+    <string name="root_feature_keylogger">Kernel-Level Keylogger</string>
+    <string name="root_feature_stealth_media">Stealth Media Capture (Hide Green Dot)</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">App Settings</string>
+    <string name="category_appearance">Appearance</string>
+    <string name="theme_title">Theme</string>
+    <string name="theme_summary">Choose the app\'s appearance</string>
+    <string name="language_title">Language</string>
+    <string name="language_summary">Select the application language</string>
+    <string name="category_features">Features</string>
+    <string name="shake_sensitivity_title">Shake to Panic Sensitivity</string>
+    <string name="shake_sensitivity_summary">Set how hard the device must be shaken to trigger a panic alert</string>
+
+    <!-- Event Log Screen -->
+    <string name="event_log_title">Security Event Log</string>
+    <string name="event_log_info">All logs are stored securely on your device. Most recent events are shown first.</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_threat_critical">CRITICAL THREAT DETECTED</string>
+    <string name="dashboard_threat_critical_desc">Immediate action required. Review critical threats below.</string>
+    <string name="dashboard_threat_high">HIGH THREAT DETECTED</string>
+    <string name="dashboard_threat_high_desc">High-priority threats detected. Review security status below.</string>
+    <string name="dashboard_threat_medium">THREATS DETECTED</string>
+    <string name="dashboard_threat_medium_desc">Moderate threats detected. See details below.</string>
+    <string name="dashboard_status_active">Active</string>
+    <string name="dashboard_status_inactive">Inactive</string>
+    <string name="dashboard_status_detected">Detected</string>
+    <string name="dashboard_status_not_found">Not Found</string>
+    <string name="dashboard_threat_card_title">🛡️ Threat Assessment</string>
+    <string name="dashboard_threat_level">Threat Level: %s</string>
+    <string name="dashboard_threat_summary">%1$d threats detected (%2$d%% confidence)</string>
+    <string name="dashboard_threat_issues_title">Detected Issues:</string>
+    <string name="dashboard_threat_recommendations_title">\nRecommendations:\n</string>
+    <string name="dashboard_no_threats_title">No Threats Detected</string>
+    <string name="dashboard_no_threats_desc">The latest scan found no immediate threats.</string>
+
+    <!-- Security Levels -->
+    <string name="level_0_title">Security Level: Compromised</string>
+    <string name="level_0_desc">Critical permissions are missing. App is inactive.</string>
+    <string name="level_1_title">Security Level: Poor</string>
+    <string name="level_1_desc">Basic setup is incomplete. Device is vulnerable.</string>
+    <string name="level_2_title">Security Level: Fair</string>
+    <string name="level_2_desc">Core features are active. Consider enabling more.</string>
+    <string name="level_3_title">Security Level: Good</string>
+    <string name="level_3_desc">Strong protection is enabled. Great job!</string>
+    <string name="level_4_title">Security Level: Excellent</string>
+    <string name="level_4_desc">Advanced protection is active.</string>
+    <string name="level_5_title">Security Level: Maximum</string>
+    <string name="level_5_desc">All security features are configured and active.</string>
+    <string name="level_root_title">Security Level: God Mode</string>
+    <string name="level_root_desc">Root access detected. You have full control, but the device\'s security model is bypassed. Use with extreme caution.</string>
+
+    <!-- Checklist Items -->
+    <string name="check_root_title">Root Access</string>
+    <string name="check_root_desc">Indicates if the device has superuser privileges.</string>
+    <string name="check_pins_title">Secure &amp; Duress PINs</string>
+    <string name="check_pins_desc">Set both a normal and a panic PIN.</string>
+    <string name="check_admin_title">Device Admin</string>
+    <string name="check_admin_desc">Required for remote lock and wipe.</string>
+    <string name="check_accessibility_title">Accessibility Service</string>
+    <string name="check_accessibility_desc">Required for the Fake Shutdown feature.</string>
+    <string name="check_permissions_title">Runtime Permissions</string>
+    <string name="check_permissions_desc">Camera, Location, SMS, Notifications, and other core permissions.</string>
+    <string name="check_contact_title">Emergency Contact</string>
+    <string name="check_contact_desc">The phone/email that receives alerts.</string>
+    <string name="check_intruder_title">Intruder Selfie</string>
+    <string name="check_intruder_desc">Captures a photo after 3+ failed PIN attempts.</string>
+    <string name="check_sim_title">SIM Change Alert</string>
+    <string name="check_sim_desc">Sends an alert if the SIM card is swapped.</string>
+    <string name="check_fake_shutdown_title">Fake Shutdown</string>
+    <string name="check_fake_shutdown_desc">Prevents a thief from turning off the device.</string>
+
+    <!-- Permissions Guide -->
+    <string name="core_services_guide_title">Why These Services Are Needed</string>
+    <string name="guide_runtime_title">Runtime Permissions</string>
+    <string name="guide_runtime_desc"><b>Enables:</b> Intruder Selfie, Record Video, Ambient Audio, Geofence, SIM Change Alert, sending SMS/Email alerts with location, and showing notifications.</string>
+    <string name="guide_admin_title">Device Admin</string>
+    <string name="guide_admin_desc">This is the most critical service. It is required to prevent unauthorized uninstallation of the app and enables the <b>Remote Wipe</b>, <b>Wipe PIN</b>, and <b>Remote Lock</b> features.</string>
+    <string name="guide_accessibility_title">Accessibility Service</string>
+    <string name="guide_accessibility_desc">Monitors for the system power menu to enable the <b>Fake Shutdown</b> feature, preventing a thief from easily turning off the device.</string>
+    <string name="guide_overlay_title">Draw Over Other Apps</string>
+    <string name="guide_overlay_desc">Allows the app to display the <b>Fake Shutdown</b> screen and the secure <b>Lock Screen</b> on top of any other application, ensuring they cannot be bypassed.</string>
+    <string name="guide_usage_title">Usage Access (Optional)</string>
+    <string name="guide_usage_desc">Grants the advanced <b>Threat Detection Engine</b> the ability to monitor app usage patterns for anomalies, enhancing its ability to detect sophisticated threats.</string>
+
+    <!-- About Screen -->
+    <string name="about_title">About Uncle Ted</string>
+    <string name="about_developer_credit">Designed and Developed by Hamoon Soleimani</string>
+    <string name="about_app_version">Version 1.0.2</string>
+    <string name="about_legal_disclaimer_title">Legal &amp; Ethical Disclaimer</string>
+    <string name="about_legal_disclaimer_body">This application is designed for educational and defensive security purposes ONLY. Features like stealth operations, remote data access, and data destruction carry significant ethical and legal responsibilities. Never install or use this application on a device without the owner\'s explicit and informed consent. Unauthorized use is strictly prohibited and may lead to severe legal consequences. The developer assumes no liability for any misuse of this software.</string>
+    <string name="about_github">GitHub</string>
+    <string name="about_website">Website</string>
+    <string name="about_quotes_title">Ted Kaczynski</string>
+
+    <!-- Services & Notifications -->
+    <string name="accessibility_service_label">Uncle Ted Power Monitor</string>
+    <string name="accessibility_service_description">To enable the Fake Shutdown feature, Uncle Ted needs to monitor when the system power menu appears. This allows the app to cover the real menu with a fake one, preventing a thief from turning off the device while emergency alerts are sent. The service does not read or store any other on-screen content.</string>
+    <string name="notification_title">Uncle Ted Protection Active</string>
+    <string name="notification_text">Monitoring for security events in the background.</string>
+    <string name="notification_channel_name">Uncle Ted Monitoring Service</string>
+    <string name="selfie_saved_notification_title">Intruder Selfie Saved</string>
+    <string name="selfie_saved_notification_body">Tap to view the saved image.</string>
+    <string name="selfie_saved_notification_channel_name">File Save Alerts</string>
+    <string name="admin_disable_warning">Disabling this service will severely compromise your device\'s security. This action has been logged and reported.</string>
+    <string name="watchdog_status_message">Uncle Ted: Device Status Update</string>
+    <string name="watchdog_status_body">Current Status:\nBattery: %1$s%%\nLocation: %2$s</string>
+
+    <!-- All Ted Kaczynski quotes in a single array for random selection -->
+    <string-array name="kaczynski_quotes">
+        <item>"The Industrial Revolution and its consequences have been a disaster for the human race."</item>
+        <item>"The degree of personal freedom that exists in a society is determined more by the economic and technological structure of the society than by its laws or its form of government."</item>
+        <item>"These engineered human beings may be happy in such a society, but they most certainly will not be free. They will have been reduced to the status of domestic animals."</item>
+        <item>"It would be better to dump the whole stinking system and take the consequences."</item>
+        <item>"Imagine a society that subjects people to conditions that make them terribly unhappy, then gives them the drugs to take away their unhappiness. Science fiction? It is already happening to some extent in our own society... Instead of removing the conditions that make people depressed, modern society gives them antidepressant drugs. In effect, antidepressants are a means of modifying an individual\'s internal state in such a way as to enable him to tolerate social conditions that he would otherwise find intolerable."</item>
+        <item>"Never lose hope, be persistent and stubborn and never give up. There are many instances in history where apparent losers suddenly turn out to be winners unexpectedly, so you should never conclude all hope is lost."</item>
+        <item>"The concept of \'mental health\' in our society is defined largely by the extent to which an individual behaves in accord with the needs of the system and does so without showing signs of stress."</item>
+        <item>"It is important not to confuse freedom with mere permissiveness."</item>
+        <item>"The big problem is that people don\'t believe a revolution is possible, and it is not possible precisely because they do not believe it is possible."</item>
+        <item>"Our society tends to regard as a sickness any mode of thought or behavior that is inconvenient for the system and this is plausible because when an individual doesn\'t fit into the system it causes pain to the individual as well as problems for the system. Thus the manipulation of an individual to adjust him to the system is seen as a cure for a sickness and therefore as good."</item>
+        <item>"Power depends ultimately on physical force. By teaching people that violence is wrong (except, of course, when the system itself uses violence via the police or the military), the system maintains its monopoly on physical force and thus keeps all power in its own hands."</item>
+        <item>"But what first motivated me wasn\'t anything I read. I just got mad seeing the machines ripping up the woods."</item>
+        <item>"There is nothing wrong with violence in itself. In any particular case, whether violence is good or bad depends on how it is used and the purpose for which it is used."</item>
+        <item>"Those who are most sensitive about \'politically incorrect\' terminology are not the average black ghetto-dweller, Asian immigrant, abused woman or disabled person, but a minority of activists, many of whom do not even belong to any \'oppressed\' group but come from privileged strata of society."</item>
+        <item>"The leftist is antagonistic to the concept of competition because, deep inside, he feels like a loser."</item>
+        <item>"It is not possible to make a LASTING compromise between technology and freedom, because technology is by far the more powerful social force and continually encroaches on freedom through REPEATED compromises."</item>
+        <item>"We can do anything we like as long as it is UNIMPORTANT."</item>
+        <item>"To those who think that all this sounds like science fiction, we point out that yesterday\'s science fiction is today\'s fact. The Industrial Revolution has radically altered man\'s environment and way of life, and it is only to be expected that as technology is increasingly applied to the human body and mind, man himself will be altered as radically as his environment and way of life have been."</item>
+        <item>"Constitutional rights are useful up to a point, but they do not serve to guarantee much more than what could be called the bourgeois conception of freedom. According to the bourgeois conception, a \'free\' man is essentially an element of a social machine and has only a certain set of prescribed and delimited freedoms; freedoms that are designed to serve the needs of the social machine more than those of the individual."</item>
+        <item>"If the system breaks down the consequences will still be very painful. But the bigger the system grows the more disastrous the results of its breakdown will be, so if it is to break down it had best break down sooner rather than later."</item>
+        <item>"The leftist is anti-individualistic... He is not the sort of person who has an inner sense of confidence in his own ability to solve his own problems and satisfy his own needs."</item>
+        <item>"Let\'s stick to the practical and the concrete: Would you like it if people lived in a virtual world? If machines were smarter than people? If, in the future, people, animals and plants were products of technology? If you don\'t like these ideas, then for you the computer and biological sciences clearly are dangerous."</item>
+        <item>"Manifesto. Read my Manifesto. I\'ve written a Manifesto. It\'s all in the Manifesto!"</item>
+        <item>"No, what worries me is that I might in a sense adapt to this environment and come to be comfortable here and not resent it anymore. And I am afraid that as the years go by that I may forget, I may begin to lose my memories of the mountains and the woods and that\'s what really worries me, that I might lose those memories, and lose that sense of contact with wild nature in general. But I am not afraid they are going to break my spirit."</item>
+        <item>"We are not supposed to hate anyone, yet almost everyone hates somebody at some time or other, whether he admits it to himself or not."</item>
+        <item>"It is obvious that [leftists] are not cool-headed logicians systematically analyzing the foundations of knowledge. They are deeply involved emotionally in their attack on truth and reality."</item>
+        <item>"People do not consciously and rationally choose the form of their society. Societies develop through processes of social evolution that are not under rational human control."</item>
+        <item>"I believe in nothing."</item>
+    </string-array>
+</resources>

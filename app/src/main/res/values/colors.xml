@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Light Theme Colors -->
+    <color name="md_theme_light_primary">#005AC1</color>
+    <color name="md_theme_light_onPrimary">#FFFFFF</color>
+    <color name="md_theme_light_primaryContainer">#D8E2FF</color>
+    <color name="md_theme_light_onPrimaryContainer">#001A41</color>
+    <color name="md_theme_light_secondary">#00658E</color>
+    <color name="md_theme_light_onSecondary">#FFFFFF</color>
+    <color name="md_theme_light_secondaryContainer">#C8E6FF</color>
+    <color name="md_theme_light_onSecondaryContainer">#001E2E</color>
+    <color name="md_theme_light_tertiary">#6C5677</color>
+    <color name="md_theme_light_onTertiary">#FFFFFF</color>
+    <color name="md_theme_light_tertiaryContainer">#F5D9FF</color>
+    <color name="md_theme_light_onTertiaryContainer">#261430</color>
+    <color name="md_theme_light_error">#BA1A1A</color>
+    <color name="md_theme_light_onError">#FFFFFF</color>
+    <color name="md_theme_light_background">#FDFCFF</color>
+    <color name="md_theme_light_onBackground">#1A1C1E</color>
+    <color name="md_theme_light_surface">#FDFCFF</color>
+    <color name="md_theme_light_onSurface">#1A1C1E</color>
+    <color name="md_theme_light_surfaceVariant">#E1E2EC</color>
+    <color name="md_theme_light_onSurfaceVariant">#44474F</color>
+    <color name="md_theme_light_outline">#74777F</color>
+
+    <!-- Dark Theme Colors -->
+    <color name="md_theme_dark_primary">#ADC6FF</color>
+    <color name="md_theme_dark_onPrimary">#002E69</color>
+    <color name="md_theme_dark_primaryContainer">#004494</color>
+    <color name="md_theme_dark_onPrimaryContainer">#D8E2FF</color>
+    <color name="md_theme_dark_secondary">#86CFFF</color>
+    <color name="md_theme_dark_onSecondary">#00344C</color>
+    <color name="md_theme_dark_secondaryContainer">#004C6C</color>
+    <color name="md_theme_dark_onSecondaryContainer">#C8E6FF</color>
+    <color name="md_theme_dark_tertiary">#D9BDE3</color>
+    <color name="md_theme_dark_onTertiary">#3C2946</color>
+    <color name="md_theme_dark_tertiaryContainer">#533F5E</color>
+    <color name="md_theme_dark_onTertiaryContainer">#F5D9FF</color>
+    <color name="md_theme_dark_error">#FFB4AB</color>
+    <color name="md_theme_dark_onError">#690005</color>
+    <color name="md_theme_dark_background">#1A1C1E</color>
+    <color name="md_theme_dark_onBackground">#E3E2E6</color>
+    <color name="md_theme_dark_surface">#1A1C1E</color>
+    <color name="md_theme_dark_onSurface">#E3E2E6</color>
+    <color name="md_theme_dark_surfaceVariant">#44474F</color>
+    <color name="md_theme_dark_onSurfaceVariant">#C4C6D0</color>
+    <color name="md_theme_dark_outline">#8E9099</color>
+
+    <!-- ### NEW: AMOLED Theme Color ### -->
+    <color name="amoled_black">#000000</color>
+
+    <!-- Status Colors -->
+    <color name="status_green">#1B5E20</color>
+    <color name="status_red">#B71C1C</color>
+    <color name="status_yellow">#F57F17</color>
+    <!-- Security Level Colors -->
+    <color name="level_1_poor">#D32F2F</color> <!-- Red -->
+    <color name="level_2_fair">#F57C00</color> <!-- Orange -->
+    <color name="level_3_good">#FBC02D</color> <!-- Yellow -->
+    <color name="level_4_excellent">#7CB342</color> <!-- Lime Green -->
+    <color name="level_5_maximum">#388E3C</color> <!-- Dark Green -->
+    <color name="level_root_god_mode">#6A1B9A</color> <!-- Purple -->
+</resources>

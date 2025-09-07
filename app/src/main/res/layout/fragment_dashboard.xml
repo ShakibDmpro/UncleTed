@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurfaceVariant"
+    tools:context=".fragments.DashboardFragment">
+
+    <!-- ### FIX: Add a ProgressBar for the initial loading state ### -->
+    <ProgressBar
+        android:id="@+id/progress_indicator"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <!-- ### FIX: Wrap the entire scrollable content in a single view for easy hiding/showing ### -->
+    <ScrollView
+        android:id="@+id/dashboard_content_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- SECURITY LEVEL METER -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="4dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/iv_status_icon"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_shield_check_24"
+                        tools:tint="@color/level_1_poor" />
+
+                    <TextView
+                        android:id="@+id/tv_status_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:textAppearance="?attr/textAppearanceTitleLarge"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/iv_status_icon"
+                        app:layout_constraintTop_toTopOf="@id/iv_status_icon"
+                        tools:text="Security Level: Poor" />
+
+                    <androidx.constraintlayout.widget.Barrier
+                        android:id="@+id/header_bottom_barrier"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:barrierDirection="bottom"
+                        app:constraint_referenced_ids="iv_status_icon,tv_status_title" />
+
+                    <!-- 5-Stage Progress Bar -->
+                    <LinearLayout
+                        android:id="@+id/progress_bar_container"
+                        android:layout_width="0dp"
+                        android:layout_height="8dp"
+                        android:layout_marginTop="16dp"
+                        android:orientation="horizontal"
+                        android:weightSum="5"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/header_bottom_barrier">
+
+                        <View
+                            android:id="@+id/progress_bar_1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="2dp"
+                            android:layout_weight="1"
+                            android:background="?attr/colorOutline" />
+
+                        <View
+                            android:id="@+id/progress_bar_2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="2dp"
+                            android:layout_weight="1"
+                            android:background="?attr/colorOutline" />
+
+                        <View
+                            android:id="@+id/progress_bar_3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="2dp"
+                            android:layout_weight="1"
+                            android:background="?attr/colorOutline" />
+
+                        <View
+                            android:id="@+id/progress_bar_4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="2dp"
+                            android:layout_weight="1"
+                            android:background="?attr/colorOutline" />
+
+                        <View
+                            android:id="@+id/progress_bar_5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="?attr/colorOutline" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_status_subtitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textAppearance="?attr/textAppearanceBodyMedium"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/progress_bar_container"
+                        tools:text="Complete more steps to improve security." />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Container for Threat Assessment -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_threat_assessment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:visibility="gone"
+                tools:visibility="visible"
+                app:cardElevation="2dp">
+
+                <FrameLayout
+                    android:id="@+id/threat_assessment_content_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ViewStub
+                        android:id="@+id/stub_threats_found"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout="@layout/include_threat_assessment" />
+
+                    <ViewStub
+                        android:id="@+id/stub_no_threats"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout="@layout/include_no_threats" />
+                </FrameLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- SECURITY CHECKLIST -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <LinearLayout
+                    android:id="@+id/checklist_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/divider_line"
+                    android:orientation="vertical"
+                    android:showDividers="middle" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,40 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="@string/category_appearance">
+
+        <ListPreference
+            app:defaultValue="system"
+            app:entries="@array/theme_entries"
+            app:entryValues="@array/theme_values"
+            app:key="theme"
+            app:title="@string/theme_title"
+            app:summary="@string/theme_summary"
+            app:useSimpleSummaryProvider="true" />
+
+        <!-- ### NEW: Language Preference ### -->
+        <ListPreference
+            app:defaultValue="system"
+            app:entries="@array/language_entries"
+            app:entryValues="@array/language_values"
+            app:key="language"
+            app:title="@string/language_title"
+            app:summary="@string/language_summary"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/category_features">
+
+        <SeekBarPreference
+            app:key="shake_sensitivity"
+            app:title="@string/shake_sensitivity_title"
+            app:summary="@string/shake_sensitivity_summary"
+            app:defaultValue="3"
+            android:min="1"
+            android:max="5"
+            app:showSeekBarValue="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
